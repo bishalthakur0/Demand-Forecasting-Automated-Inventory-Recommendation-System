@@ -9,6 +9,5 @@ COPY . .
 
 ENV PYTHONPATH=/app
 
-WORKDIR /app/api
-
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+WORKDIR /app/apiEXPOSE 10000
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "10000"]
